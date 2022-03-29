@@ -137,6 +137,9 @@ section h1{
     border: 1px solid #ddd;
     width: 100%;
 }
+table, tr, th, td{
+    border-collapse: collapse;
+}
 .table thead th{
     padding: 1.5rem;
 }
@@ -159,6 +162,23 @@ section h1{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+#shopping_cart td a:first-child{
+    margin-right:8px;
+}
+#shopping_cart td a{
+    padding-right:2rem;
+}
+#shopping_cart tr:hover {background-color: #D6EEEE;}
+
+.btn-primary{
+    background-color: rgb(0, 0, 200, .5);
+}
+.table-data .box{
+    margin-bottom: 2rem;
+}
+.table-data .btn{
+    padding: 10px 15px;;
 }
 .contact .row{
     display: flex;
