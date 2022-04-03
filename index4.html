@@ -52,6 +52,7 @@
 <body>
     <!-- header starts here -->
     <header class="header">
+        <div id="menu-bar" class="fas fa-bars"></div>
         <a href="" class="logo">myLogo</a>
         <nav class="navbar">
             <a href="index3.html">Home</a>
@@ -64,38 +65,61 @@
     <!-- header end here -->
     <!-- about me start -->
     <section class="home_4">
-        <center><h1 style="text-align:center;display:block">Homework four</h1></center>
-        <div class="p-14">
-        <p>CSS property with display, margin, padding, border style with css so that all value will add for responsive website. Display value have multiple property they are included following: inline, block, inline-block, none. Other property include: flex, grid, contents, inline-flex, inline-grid, inline-table,table,list-item, and many more. Margin were used for outer space. it have following rule margin: top right bottom left. While padding were used for inner space to make content space bigger from inside a box. It following same rule as Margin, padding: top right bottom left. A border means to give a border box. Its rule are border-width, border-style, and border-color.</p>
+        <div class="content">
+            <h3>Video content</h3>
+            <p>This video were created with display flex box. Its amazing css style.earliar we need to have to style a lot with css.But with flex its more easy and flexible to customize and position text and column.I'm learning more about flex property and loving it.</p>
+            <a href="#" class="btn">See More</a>
+        </div>
+        <div class="video-container">
+            <video src="video/video2.mp4" id="video" loop autoplay muted></video>
+        </div>
+    </section>
+    <section class="two_row" style="padding:0">
+        <div class="row">
+          <div class="leftcolumn">
+            <div class="card">
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Dec 7, 2017</h5>
+              <div class="fakeimg" style="height:200px;"><img src="images/blog-1.jpg"></div>
+              <p class="title">Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div class="card">
+              <h2>TITLE HEADING</h2>
+              <h5>Title description, Sep 2, 2017</h5>
+              <div class="fakeimg" style="height:200px;"><img src="images/blog-2.jpg"></div>
+              <p class="title">Some text..</p>
+              <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+          </div>
+          <div class="rightcolumn">
+            <div class="card">
+              <h2>About Me</h2>
+              <div class="fakeimg" id="img_me" style="height:100px;"><img src="images/pic1.png"></div>
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="card">
+              <h3>Popular Post</h3>
+              <ul>
+                <li>
+                    <a href="index.html">Homework 1</a>
+                    <a href="index2.html">Homework 2</a>
+                    <a href="index3.html">Homework 3</a>
+                    <a href="table.html">Table work</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Follow Me</h3>
+              <p>Some text..</p>
+            </div>
+          </div>
         </div>
 
-        <div class="box1">
-    <center><h2>Displaying Data with inline-block</h2></center>
-            <div class="box">lorem ipusum dolor</div>
-            <div class="box">lorems kelkrelr kerjek</div>
-            <div class="box">lorem kerjke kejrl</div>
-        </div>
-
-        <div id="box2">
-    <center><h2>Displaying Data with block</h2></center>
-            <div class="box2">
-            <div class="box">lorem ipusum dolor</div>
-            <div class="box">lorems kelkrelr kerjek</div>
-            <div class="box">lorem kerjke kejrl</div>
-            </div>
-        </div>
-        <div id="box3">
-    <center><h2 style="margin-bottom:15px;display:block;">Displaying Data with inline</h2></center>
-        <div class="box3">
-            <div class="box">lorem ipusum dolor</div>
-            <div class="box">lorems kelkrelr kerjek</div>
-            <div class="box">lorem kerjke kejrl</div>
-            </div>
-        </div>
     </section>
     <!-- End contact page -->
     <!-- footer start here -->
-    <footer class="footer">
+    <footer class="footer" style="display:block;width:100%;">
         <div class="box-container">
             <div class="box">
                 <h3>Quick Link</h3>
@@ -134,6 +158,19 @@
         </div>
     </footer>
     <!-- footer end here  -->
+    <script type="text/javascript">
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    }
+    menu.addEventListener('click', () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    });
+
+    </script>
 </body>
 </html>
 
